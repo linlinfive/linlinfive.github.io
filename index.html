@@ -1,20 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="./swiper.js"></script>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./swiper.css">
 </head>
+
 <body>
-    <h1>臭猪</h1>
-    <p>吃烧烤吗</p>
-    <div>
-        <img src="./images/臭猪.jpg" alt="">
-        <img src="./images/gg.jpg" alt="">
-        <img src="./images/psb.jpg" alt="">
-        <img src="./images/bao.jpg" alt="">
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./images/bao.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/gg.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/psb.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./images/臭猪.jpg" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <!-- <div class="swiper-pagination"></div> -->
+
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
     </div>
+    <!-- 初始化swiper -->
+    <script>
+        //代表把这个大盒子变成轮播图
+        var mySwiper = new Swiper('.swiper-container', {
+            // direction: 'vertical', // 垂直切换选项(默认是水平 需要就水平)
+            loop: true, // 循环模式选项(是否要无限轮播)
+
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: true,//等同于以下设置
+            autoplay: {
+                delay: 1500,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+            mousewheel: true,
+            effect: 'cube',
+            effect: 'cube',
+            cubeEffect: {
+                // slideShadows: true,
+                // shadow: true,
+                // shadowOffset: 100,
+                shadowScale: 0.6
+            },
+        })        
+    </script>
 </body>
+
 </html>
