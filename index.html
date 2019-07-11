@@ -24,8 +24,8 @@
         <!-- <div class="swiper-pagination"></div> -->
 
         <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
 
         <!-- 如果需要滚动条 -->
         <!-- <div class="swiper-scrollbar"></div> -->
@@ -34,7 +34,7 @@
     <script>
         //代表把这个大盒子变成轮播图
         var mySwiper = new Swiper('.swiper-container', {
-            // direction: 'vertical', // 垂直切换选项(默认是水平 需要就水平)
+            direction: 'vertical', // 垂直切换选项(默认是水平 需要就水平)
             loop: true, // 循环模式选项(是否要无限轮播)
 
             // 如果需要分页器
@@ -61,11 +61,10 @@
             },
             mousewheel: true,
             effect: 'cube',
-            effect: 'cube',
             cubeEffect: {
-                // slideShadows: true,
-                // shadow: true,
-                // shadowOffset: 100,
+                slideShadows: true,
+                shadow: true,
+                shadowOffset: 100,
                 shadowScale: 0.6
             },
         })        
