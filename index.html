@@ -2,74 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>灵灵五</title>
-    <script src="./swiper.js"></script>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./swiper.css">
-    <link rel="shortcut icon" href="./images/头像.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"">
+  <meta http-equiv=" X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="web前端个人简历,吴晓琳简历,前端开发">
+  <meta name="desription" content="吴晓琳个人简历">
+  <link rel="shortcut icon" type="image/x-icon" href="images/ico/bitbug_favicon.ico" />
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+  <title>web前端工程师简历</title>
+  <style></style>
 </head>
 
 <body>
-
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./images/bao.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/gg.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/psb.jpg" alt=""></div>
-            <div class="swiper-slide"><img src="./images/臭猪.jpg" alt=""></div>
-        </div>
-        <!-- 如果需要分页器 -->
-        <!-- <div class="swiper-pagination"></div> -->
-
-        <!-- 如果需要导航按钮 -->
-        <!-- <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div> -->
-
-        <!-- 如果需要滚动条 -->
-        <!-- <div class="swiper-scrollbar"></div> -->
+  <header>
+    <!-- 轮播图 -->
+    <div class="row banner">
+      <ul>
+        <li style="background-image: url(./images/bg22.jpg);"></li>
+        <li style="background-image: url(./images/bg55.jpg);"></li>
+        <li style="background-image: url(./images/bg33.jpg);"></li>
+        <li style="background-image: url(./images/bg44.jpg);"></li>
+      </ul>
+      <div class="mask">
+      </div>
+      <div class="container bannerText">
+        <!-- 使用container 代表100%宽屏幕自适应 -->
+        <h1>我叫吴晓琳</h1>
+        <p>准前端开发工程师一枚，乐于尝试新技术，学习能力强。</p>
+      </div>
     </div>
-    <!-- 初始化swiper -->
-    <script>
-        //代表把这个大盒子变成轮播图
-        var mySwiper = new Swiper('.swiper-container', {
-            direction: 'vertical', // 垂直切换选项(默认是水平 需要就水平)
-            loop: true, // 循环模式选项(是否要无限轮播)
 
-            // 如果需要分页器
-            pagination: {
-                el: '.swiper-pagination',
-            },
+  </header>
 
-            // 如果需要前进后退按钮
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            autoplay: true,//等同于以下设置
-            autoplay: {
-                delay: 1500,
-                stopOnLastSlide: false,
-                disableOnInteraction: true,
-            },
+  <!--导航-->
+  <nav class="nav">
+    <ul class="container">
+      <ul>
+        <li><a href="#">关于我</a></li>
+        <li><a href="#">技能</a></li>
+        <li><a href="#">经历</a></li>
+        <li><a href="#">项目</a></li>
+        <li><a href="#">联系我</a></li>
+      </ul>
+    </ul>
+  </nav>
+
+  <div id="aboutme">
+    <div class="container">
+      <div class="title">
+        <h2>关于我</h2>
+      </div>
+      <div class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 aboutCont">
+        <div id="description">
+          <p>
+            我来自广东惠州，2018年毕业于惠州市成功职业技术学校，计算机应用专业。
+          </p>
+          <p>
+            毕业一年后在家自学前端，熟练使用HTML5、CSS3以及JavaScript。
+          </p>
+          <p>
+            熟练使用HTML5、CSS3
+            了解JavaScript(jQuery)
+            熟悉Bootstrap3；
+            熟悉小程序
+            能熟练使用前端开发工具，例如WebPack打包工具等等；
+          </p>
+          <p>
+            学习了React，但更加喜欢轻巧、高性能、可组件化的MVVM框架Vue.js
+          </p>
+          <p>爱读书，爱听歌，爱游泳，爱跑步，爱爬山。代码并不是生活的全部。</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-            // 如果需要滚动条
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-            mousewheel: true,
-            effect: 'cube',
-            cubeEffect: {
-                slideShadows: true,
-                shadow: true,
-                shadowOffset: 100,
-                shadowScale: 0.6
-            },
-        })        
-    </script>
+
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src="./js/index.js"></script>
+
 </body>
 
 </html>
