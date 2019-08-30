@@ -283,6 +283,12 @@ nav ul li span:hover {
   header .banner li {
     height: 35vh;
   }
+  header h1{
+    font-size: 30px;
+  }
+  header p{
+    font-size: 16px;
+  }
   .nav li{
     padding: 20px 20px;
   }
