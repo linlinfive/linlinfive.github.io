@@ -182,13 +182,13 @@ nav ul li span:hover {
 }
 
 #aboutme .des {
-  color        : #777;
-  font-weight  : 520;
+  color           : #777;
+  font-weight     : 520;
   /* font-family  : "黑体"; */
-  margin-bottom: 20px;
-  font-size    : 18px;
-  text-align   : center;
-  margin       : 0;
+  margin-bottom   : 20px;
+  font-size       : 18px;
+  text-align      : center;
+  margin          : 0;
 }
 
 #aboutme .mydetail {
@@ -235,5 +235,55 @@ nav ul li span:hover {
 
 
 #program {
-    background-color: #f3f2f3;
+  background-color: #f3f2f3;
+}
+
+#callme {
+  height: 500px;
+}
+
+
+#callme .icon {
+  width           : 46px;
+  height          : 46px;
+  border-radius   : 15px;
+  background-color: #5b4c5c;
+  text-align      : center;
+}
+
+#callme #plan {
+  display        : flex;
+  justify-content: space-between;
+  color          : #fff;
+}
+
+
+
+#callme #plan>div {
+  padding: 40px 20px;
+}
+
+#callme #plan>div>div {
+  text-align: center;
+  margin    : 0 auto 10px;
+}
+
+#callme .icon span {
+  font-size: 40px;
+}
+
+#callme .icon img {
+  width: 85%;
+}
+
+/* 媒体区间 */
+@media(max-width:750px) {
+
+  header .banner,
+  header .banner li {
+    height: 35vh;
+  }
+  .nav li{
+    padding: 20px 20px;
+  }
 }
