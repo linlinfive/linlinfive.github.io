@@ -60,7 +60,17 @@ p {
   color      : #897f8a;
 }
 
+a {
+  color: #000;
+}
 
+a:checked {
+  color: #777;
+}
+
+a:visited {
+  color: #777;
+}
 
 .container {
   margin : 0;
@@ -143,26 +153,87 @@ nav ul li {
   padding: 30px 65px;
 }
 
-nav ul li a {
+nav ul li span {
   font-family: "微软雅黑";
   color      : #777;
   font-size  : 18px;
   font-weight: bold;
 }
 
-nav ul li a:hover {
+nav ul li span:hover {
   color          : #ef7674;
   text-decoration: none;
 }
 
 #aboutme {
-  height          : 2000px;
   background-color: #f3f2f3;
 }
+
 .title {
-  width: 100%;
+  width     : 100%;
   text-align: center;
+  margin    : 15px 0 15px 0;
 }
-#aboutme h2 {
-  margin    : 50px ;
+
+#aboutme h2,
+#skill h2,
+#callme h2 {
+  margin: 50px;
+}
+
+#aboutme .des {
+  color        : #777;
+  font-weight  : 520;
+  /* font-family  : "黑体"; */
+  margin-bottom: 20px;
+  font-size    : 18px;
+  text-align   : center;
+  margin       : 0;
+}
+
+#aboutme .mydetail {
+  margin-bottom: 20px;
+}
+
+#aboutme .hui {
+  width          : 100%;
+  display        : flex;
+  justify-content: space-between;
+  margin         : 40px 0;
+}
+
+.hui .left {
+  float: left;
+}
+
+.hui .right {
+  float: right;
+}
+
+#description {
+  margin-bottom: 70px;
+}
+
+#skill {
+  background-color: #fff;
+  text-align      : center;
+}
+
+#skill p {
+  margin: 0;
+}
+
+#skill h4 {
+  font-size     : 19px;
+  line-height   : 24px;
+  padding-bottom: 6px;
+  font-weight   : 600;
+  margin        : 0px;
+  color         : #5b4c5c;
+  margin-bottom : 20px;
+}
+
+
+#program {
+    background-color: #f3f2f3;
 }
